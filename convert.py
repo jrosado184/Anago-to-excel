@@ -1,8 +1,8 @@
 import os
 import pandas
 
-TEXT_FILE = r'C:\Users\javie\OneDrive\Documents\Anago_Knife_Scores.txt'
-EXCEL_FILE = r'C:\Users\javie\OneDrive\Documents\Anago_Knife_Scores.xlsx'
+TEXT_FILE = r'C:\Users\Javy\Documents\Anago_Knife_Scores.txt'
+EXCEL_FILE = r'C:\Users\Javy\Documents\Anago_Knife_Scores.xlsx'
 
 def convert_text_to_exel() -> bool:
     if os.path.exists(TEXT_FILE):

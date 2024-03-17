@@ -11,14 +11,14 @@ def export_data() -> bool:
     pyautogui.hotkey("ctrl", "v")
     # pyautogui.press("enter")
     time.sleep(2)
-    pyautogui.hotkey("alt", "f")
+    # pyautogui.hotkey("alt", "f")
     # pyautogui.press("enter")
     # pyautogui.press("down", presses=2) # ADJUST FOR ANAGO'S LAYOUT
     # pyautogui.press("enter")
-    pyautogui.hotkey("ctrl", "s")  
+    pyautogui.hotkey("ctrl", "shift", "s")  
     time.sleep(2) 
     pyautogui.hotkey("alt", "d")
-    pyautogui.write(r"C:\Users\javie\OneDrive\Documents")
+    pyautogui.write(r"C:\Users\Javy\Documents")
     pyautogui.press("enter")
     pyautogui.press("tab", presses=6)
     pyautogui.write("Anago_Knife_Scores")
@@ -28,15 +28,15 @@ def export_data() -> bool:
         
     
 def remove_file_if_exists() -> str:
-    if os.path.exists(r"C:\Users\javie\OneDrive\Documents\Anago_Knife_Scores.txt"):
-        os.remove(r"C:\Users\javie\OneDrive\Documents\Anago_Knife_Scores.txt")
+    if os.path.exists(r"C:\Users\Javy\Documents\Anago_Knife_Scores.xlsx"):
+        os.remove(r"C:\Users\Javy\Documents\Anago_Knife_Scores.xlsx")
         print("File has been removed")
         return True
     print("File does not exist")
     return False
 
 def check_if_file_exists() -> str:
-    if os.path.exists(r"C:\Users\javie\OneDrive\Documents\Anago_Knife_Scores.txt"):
+    if os.path.exists(r"C:\Users\Javy\Documents\Anago_Knife_Scores.txt"):
         return True
     return False
 
